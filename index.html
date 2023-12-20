@@ -28,6 +28,7 @@
                 //
                 const airQualityValue = data.records[0].concentration;
                 console.log(data);
+                airQualityElement.textContent = airQualityValue;
             })
             .catch(error => {
                 console.log(error);
