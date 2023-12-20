@@ -28,12 +28,13 @@
                 //
                 const airQualityValue = data.records[0].concentration;
                 console.log(data);
+
                 airQualityElement.textContent = airQualityValue;
             })
             .catch(error => {
                 console.log(error);
                 console.error("無法獲取API數據:" + error);
-            })
+            });
         }
         //
 
